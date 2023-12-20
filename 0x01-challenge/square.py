@@ -1,32 +1,27 @@
 #!/usr/bin/python3
-"""Square Module
-"""
+""" This is square Module """
 
 
 class Square():
-    """Square class
-    """
+    """ This is a Square class """
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """init function
-        """
+        """init function """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """ Area of the square """
+        """ Area of the square function """
         return self.width * self.height
 
     def permiter_of_my_square(self):
-        """permiter_of_my_square function
-        """
+        """permiter of my square function """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """str function
-        """
+        """str function """
         return "{}/{}".format(self.width, self.height)
 
 

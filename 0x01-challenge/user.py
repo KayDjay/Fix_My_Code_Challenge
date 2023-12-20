@@ -1,25 +1,25 @@
 #!/usr/bin/python3
 """ 
-User_class
+This is a user module
 """
 
 class User():
-    """ Documents """
+    """ User class """
 
     def __init__(self):
-        """ Documents """
+        """ This is init function """
         self.__email = None
 
     @email.setter
     def email(self, value):
-        """ Documents """
+        """ To set email value """
         if type(value) is not str:
             raise TypeError("email must be a string")
         self.__email = value
 
     @property
     def email(self):
-        """ Documenta"""
+        """ Email Function"""
         return self.__email
    
     
